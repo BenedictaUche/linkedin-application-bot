@@ -1,3 +1,4 @@
+/* Navbar section styling */
 .button-effect {
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -50,4 +51,34 @@
 .signup-button:hover,
 .signin-button:hover {
     background-color: orange;
+}
+
+/* End of navbar section styling */
+
+/* Hero-section stying */
+
+.hero-section {
+    position: relative;
+    background: linear-gradient(35deg, #3e82af 20%, #f49f33);
+    overflow: hidden;
+    max-height: 100%;
+
+}
+
+.bg--1 {
+    width: 80rem;
+    top: 0;
+    right: 0;
+}
+
+.bg--2 {
+    top: 5rem;
+    width: 57.44rem;
+    right: 0;
+}
+
+.section__one__container {
+    position: relative;
+    padding: 9.16rem 0 11rem 5.5rem;
+    overflow: visible;
 }
