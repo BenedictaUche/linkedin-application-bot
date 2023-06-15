@@ -65,6 +65,10 @@
 
 }
 
+.background {
+    width: 50%;
+}
+
 .bg--1 {
     width: 80rem;
     top: 0;
@@ -106,6 +110,10 @@
     transform: translate(-50%, -50%);
 }
 
+.tablet-img {
+    width: 100%;
+}
+
 .hero-heading {
     display: flex;
     flex-direction: column;
@@ -113,10 +121,9 @@
     font-weight: 700;
     color: #010101;
     text-shadow: #010101 0 0 .5px;
-    backface-visibility: hidden;
-    font-size: 3.95rem;
-    line-height: 5rem;
-    width: 50.63rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 50rem;
     text-align: left;
     letter-spacing: .078em;
 }
@@ -135,4 +142,19 @@
 
 .text-tablet {
     display: none;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .background {
+        display: none;
+    }
+
+    .text-tablet {
+        display: block;
+    }
 }
