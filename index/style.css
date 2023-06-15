@@ -77,8 +77,62 @@
     right: 0;
 }
 
+.bg--2 img {
+    width: 106.4%;
+    transform: translate(-2.4%, -1.4%);
+}
+
 .section__one__container {
     position: relative;
     padding: 9.16rem 0 11rem 5.5rem;
     overflow: visible;
+}
+
+.poster-promo-wrap {
+    width: 50.6rem;
+    height: 31.6rem;
+    position: absolute;
+    z-index: 3;
+    left: 3.4rem;
+    top: 3.4rem;
+    overflow: hidden;
+}
+
+.poster-promo-wrap img {
+    width: 112%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    font-family: Corbel, sans-serif;
+    font-weight: 700;
+    color: #010101;
+    text-shadow: #010101 0 0 .5px;
+    backface-visibility: hidden;
+    font-size: 3.95rem;
+    line-height: 5rem;
+    width: 50.63rem;
+    text-align: left;
+    letter-spacing: .078em;
+}
+
+.hero-description {
+    position: relative;
+    margin-top: 2.13rem;
+    width: 49.69rem;
+    line-height: 2.25rem;
+    z-index: 2;
+}
+
+.text-desktop {
+    display: inline;
+}
+
+.text-tablet {
+    display: none;
 }
