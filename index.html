@@ -1,88 +1,158 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>LinkedIn Apply Bot</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Navbar section -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 fixed-top shadow">
-            <div class="container container-fluid">
-                <a class="navbar-brand" href="#">LinkedIn Application Bot</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <!-- Navbar section -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white p-3 fixed-top shadow"
+      >
+        <div class="container container-fluid">
+          <a class="navbar-brand" href="#">LinkedIn Application Bot</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse fs-6" id="navbarNavDropdown">
-                    <ul class="navbar-nav text-body ms-2">
-                        <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Product
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Sales reps</a></li>
-                                <li><a class="dropdown-item" href="#">Marketers</a></li>
-                                <li><a class="dropdown-item" href="#">Recruiters</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ms-2">
-                            <a class="nav-link text-dark" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown ms-2 text-dark">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Knowledge Base
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Support Articles</a></li>
-                                <li><a class="dropdown-item" href="#">Tip to Users</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ms-2">
-                            <a class="nav-link text-dark" href="#">Webinar</a>
-                        </li>
-                        <button class="ms-2 border-0 border-primary px-5 py-2 rounded-pill text-white button-effect"
-                            style="background-color: #3e82af">FREE
-                            TRIAL</button>
-                        <li class="nav-item ms-2">
-                            <a class="nav-link text-dark" href="#">Log In</a>
-                            <div class="buttons-container">
-                                <a href="#" class="signup-button">Sign Up</a>
-                                <a href="#" class="signin-button">Sign In</a>
-                            </div>
-                        </li>
-                        <div class="dropdown ms-2">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </ul>
+          <div class="collapse navbar-collapse fs-6" id="navbarNavDropdown">
+            <ul class="navbar-nav text-body ms-2">
+              <li class="nav-item dropdown ms-3">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Sales reps</a></li>
+                  <li><a class="dropdown-item" href="#">Marketers</a></li>
+                  <li><a class="dropdown-item" href="#">Recruiters</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-dark" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown ms-2 text-dark">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Knowledge Base
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Support Articles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Tip to Users</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-dark" href="#">Webinar</a>
+              </li>
+              <button
+                class="ms-2 border-0 border-primary px-5 py-2 rounded-pill text-white button-effect"
+                style="background-color: #3e82af"
+              >
+                FREE TRIAL
+              </button>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-dark" href="#">Log In</a>
+                <div class="buttons-container">
+                  <a href="#" class="signup-button">Sign Up</a>
+                  <a href="#" class="signin-button">Sign In</a>
                 </div>
-            </div>
-        </nav>
+              </li>
+              <div class="dropdown ms-2">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- End of navbar -->
 
     <main>
-        <div class="" style="margin-top: 5%;">
-            <section class="hero-section">
-                <div class="container container-fluid">
-                    <div class="background bg--1 position-absolute">
+      <div class="" style="margin-top: 5%">
+        <section class="hero-section">
+          <div class="container container-fluid">
+            <div class="hero-content">
+              <div class="hero-flex">
+                <div class="hero-flex-first">
+                  <h1 class="text-capitalize">
+                    Streamline your job search with
+                    <span>LinkedIn Apply Bot.</span>
+                  </h1>
+                  <p>
+                    Say goodbye to tedious job applications. JobEase automates
+                    the process, so you can focus on what matters
+                  </p>
+                  <button class="hero-btn btn">Automate Now</button>
+                </div>
+
+                <div>
+                  <img
+                    src="./index/man-pointing-at-laptop.jpg"
+                    alt="Man searching for job"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="background bg--1 position-absolute">
                         <img src="./index/background-1.webp" alt="background" style="width: 100%;">
                     </div>
                     <div class="section__one__container">
@@ -114,55 +184,357 @@
                             <div class="os_logos"></div>
                             <div class="hero_buttons"></div>
                         </div>
+                    </div> -->
+          </div>
+        </section>
+
+        <!-- Apply section -->
+        <section class="apply-container">
+          <div class="apply-flex container container-fluid">
+
+            <div class="apply-form">
+              <form id="applyForm" class="applyForm">
+                <label for="jobTitle">Job Title</label>
+                <input
+                  type="text"
+                  id="jobTitle"
+                  name="jobTitle"
+                  class="job-title"
+                  required
+                /><br />
+
+                <label for="coverLetter">Cover Letter</label>
+                <textarea
+                  id="coverLetter"
+                  name="coverLetter"
+                  required
+                ></textarea
+                ><br />
+
+                <input type="submit" value="Apply" />
+              </form>
+            </div>
+            <div class="apply-text">
+              <h2>
+                Explore automated LinkedIn lead generation benefits for your
+                business
+              </h2>
+              <p>
+                Type your email and get the PDF-research about LinkedIn
+                opportunities and what type of audience you can reach there.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+        <!-- End of apply section -->
+
+        <!-- Features section -->
+        <section class="features-container">
+          <div class="container container-fluid">
+            <div class="features-header">
+              <h3>Features</h3>
+              <h2>LinkedIn Application Bot</h2>
+              <p>
+                We offer a full range of features to streamline lead generation
+                and sales outreach in LinkedIn
+              </p>
+            </div>
+
+            <div>
+              <ul class="features" style="transform: translateX(0px)">
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
                     </div>
-                </div>
-            </section>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
-            <h1 class="" style="margin-top: 10%;">LinkedIn Apply Bot</h1>
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
-            <form id="applyForm">
-                <label for="jobTitle">Job Title:</label>
-                <input type="text" id="jobTitle" name="jobTitle" required><br>
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
-                <label for="coverLetter">Cover Letter:</label>
-                <textarea id="coverLetter" name="coverLetter" required></textarea><br>
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
 
-                <input type="submit" value="Apply">
-            </form>
-        </div>
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="advantage-wrap d-flex advantage-wrap--1">
+                  <div class="advantage d-flex">
+                    <div class="advantage__icon">
+                      <img
+                        class="lozad"
+                        data-src="./index/scratch.svg"
+                        alt="advantage"
+                        src="./index/scratch.svg"
+                        data-loaded="true"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="heading heading--small advantage__heading">
+                        Scrape and export
+                      </h3>
+                      <p class="advantage__description">
+                        Scrape almost all available information from people or
+                        organization profiles including emails and phones,
+                        scrape message history from LinkedIn or Sales Navigator
+                        inbox and export it to CSV or send to 3rd party service.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="feature-btn">
+              <button class="btn btn-1">Try for free</button>
+              <button class="btn btn-2">watch webinar</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- End of features section -->
+
+      </div>
     </main>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        // Handle form submission
-        $('#applyForm').submit(function (e) {
-            e.preventDefault(); // Prevent the default form submission
+      // Handle form submission
+      $("#applyForm").submit(function (e) {
+        e.preventDefault(); // Prevent the default form submission
 
-            // Retrieve form data
-            var jobTitle = $('#jobTitle').val();
-            var coverLetter = $('#coverLetter').val();
+        // Retrieve form data
+        var jobTitle = $("#jobTitle").val();
+        var coverLetter = $("#coverLetter").val();
 
-            // Perform the apply action (you'll need to implement the logic here)
-            applyToJob(jobTitle, coverLetter);
-        });
+        // Perform the apply action (you'll need to implement the logic here)
+        applyToJob(jobTitle, coverLetter);
+      });
 
-        // Function to apply to a job
-        function applyToJob(jobTitle, coverLetter) {
-            // Implement your logic to automate the application process
-            // This could include automating form filling, clicking buttons, etc.
-            // You may use libraries like Puppeteer or Selenium for browser automation
+      // Function to apply to a job
+      function applyToJob(jobTitle, coverLetter) {
+        // Implement your logic to automate the application process
+        // This could include automating form filling, clicking buttons, etc.
+        // You may use libraries like Puppeteer or Selenium for browser automation
 
-            // Example alert to show successful application
-            alert("Job application for '" + jobTitle + "' submitted successfully!");
-        }
+        // Example alert to show successful application
+        alert("Job application for '" + jobTitle + "' submitted successfully!");
+      }
     </script>
-</body>
-
+  </body>
 </html>
